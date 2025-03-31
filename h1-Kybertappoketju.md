@@ -27,6 +27,9 @@ f) Metaspoilable rootshell portti 1524 on kiinnostava koska sillä voidaan mahdo
 
 ## Lähteet
 Kalin kotisivu https://www.kali.org/get-kali/#kali-live
+
 Nmap Man https://nmap.org/book/man.html
+
 Nmap Man Options Summary https://nmap.org/book/man-briefoptions.html
+
 Metaspoilable2 asennus https://tuomasvalkamo.com/PenTestCourse/week-2/
