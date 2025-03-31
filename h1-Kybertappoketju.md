@@ -4,6 +4,14 @@ x)Darknet Diaries jakso 156 Kill list:
 - Chris Monteiro tutkii Dark Webbiä ja etsii, mikä on totta ja mikä tarua. Hän tekee blogin sivusta, jossa voit palkata palkkamurhaajan. Chris saa oikeudet, jossa hän näkee muitten käyttäjien viestit ja huomaa että niitä on monia satoja, joissa on vaihdettu rahaa (bitcoineja) jotta joku henkilö murhattaisiin. 
 - Sivusto on täysin tekaistu ja oikeita palkkamurhaajia ei ole, mutta monet ihmiset, jotka sivulle tekee tilauksen ovat jo niin uponneita murhan suunnitteluun, että saattavat tehdä sen itse. Jaksossa mainitaan tapaus, jossa Yhdysvalloissa FBI on yhteydessä naiseen, joka on vaarassa, jälkikäteen huomataan, että hänen miehensä on tehnyt tilauksen naisen murhasta ja kun FBI oli yhteydessä hän huumaa naisen ja tappaa hänet.
 
+Kill chain
+- Tappoketjulla tarkoitetaan prosessia jolla hyökätään vastustajaan ja halutaan saada aikaan haluttu vaikutus.
+- Tappoketjun voi jakaa 7 osaan ja nämä osat ovat Reconnaissance, Weaponization, Delivery, Exploitation, Installation, Command and Control ja Actions on Objectives.
+
+KKO:2003:36
+-Syytetty oli tehnyt porttiskannauksen OP tietojärjestelmään ilman erillistä lupaa.
+-Hovioikeis oli päättänyt että syytetty oli syyllistynyt tietomurron yritykseen.
+
 a) Latasin uusimman Kali linux live tikun iso-kuvan Kalin kotisivulta versio: kali-linux-2025. 1a-live-amd64.iso. Käytin asennuksessa 4096mb muistia, 3 prosessoria ja 60gb kovalevy muistia.
 
 b) Poistin kalin verkosta painamalla Ethernet Network kuvaketta oikeasta yläkulmasta ja valitsemalla disconnect. Tämän jälkeen avasin terminaalin ja kokeilin komentoa ping 8.8.8.8, josta tuli vastaus ping: connect: Network is unreachable.
