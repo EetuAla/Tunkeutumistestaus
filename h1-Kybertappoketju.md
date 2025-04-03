@@ -17,6 +17,10 @@ a) Latasin uusimman Kali linux live tikun iso-kuvan Kalin kotisivulta versio: ka
 
 b) Poistin kalin verkosta painamalla Ethernet Network kuvaketta oikeasta yläkulmasta ja valitsemalla disconnect. Tämän jälkeen avasin terminaalin ja kokeilin komentoa ping 8.8.8.8, josta tuli vastaus ping: connect: Network is unreachable.
 Koitin myös avata Firefox selaimella YouTuben, enkä päässyt sivulle. ”Hmm. We’re having trouble finding that site.” ponnahti sivulle kun koittin avata YouTuben.
+![2](https://github.com/user-attachments/assets/95494ee6-87b5-41bb-86ea-74047f1bbe9e) ![3](https://github.com/user-attachments/assets/2ebdcbce-8b95-4771-ade7-9e9ee00a58da)
+
+![4](https://github.com/user-attachments/assets/851431f2-678f-45ca-87d6-97ae4a3e18ef)
+
 
 c) nmap -T4 -A localhost parametrit: 
 -T4 tekee “Timing template”, joka määrittää skannauksen nopeuden (Nmap Man Options Summary).
