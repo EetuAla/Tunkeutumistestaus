@@ -27,16 +27,36 @@ c) nmap -T4 -A localhost parametrit:
 -A valinta lisää skannaukseen käyttöjärjestelmä tunnistuksen ja versio tunnistuksen (Nmap Man).
 -localhost on kohde johon skannaus tehdään, tässä tapauksessa oma virtuaali-kone.
 Itsellä kun ajoin komennon nmap -T4 -A localhost sain vastaukseksi että kaikki 1000 porttia on ignore listalla ja 1000 tcp porttia on kiinni.
+![5](https://github.com/user-attachments/assets/c967d83a-3ff9-4762-b455-b92967c8e6a7)
 
-d) Asensin Apache2 ja openssh-serverin ja ajoin komennon nmap -T4 -A localhost uudestaan ja tällä kertaa tuloksissa on eroja. Skannaus löytää molemmat Apache2 ja openssh-serverin. Openssh on portti numerolla 22 ja se on aukinaisessa tilassa, ja Apache2 on portti numerolla 80 se on myös aukinaisessa tilassa.
 
-e) Asensin Metaspoilable 2 VirtualBoxiin.
+d) Asensin Apache2 ja openssh-serverin komennoilla (sudo apt install openssh-server ja sudo apt install apache2) jonka jälkeen ajoin komennon nmap -T4 -A localhost uudestaan ja tällä kertaa tuloksissa on eroja. Skannaus löytää molemmat Apache2 ja openssh-serverin. Openssh on portti numerolla 22 ja se on aukinaisessa tilassa, ja Apache2 on portti numerolla 80 se on myös aukinaisessa tilassa.
+![6](https://github.com/user-attachments/assets/2af8dde2-8549-4e24-a89d-7a3b61cde858)
 
-f) Tein koneiden välille virtuaaliverkon, jossa Kali koneen saa myös verkkoon kiinni, jos niin haluaa. Pingasin molemmissa koneissa www.google.com ja en saanut yhteyttä. Sitten kokeilin pingata Kali koneella Metaspoilable 2 konetta ja sain vastauksen takaisin. Käytin verkon asetuksiin Tuomaksen vinkkejä (Metaspoilable2 asennus).
+
+e) Asensin Metaspoilable 2 VirtualBoxiin Tuomas Valkamon ohjeiden mukaisesti (Metaspoilable 2 asennus).
+![9](https://github.com/user-attachments/assets/a3765c0c-2f42-46f1-b47a-634dcbaad328)
+
+![7](https://github.com/user-attachments/assets/d39157aa-8c2c-4380-829c-b9c76b091515)
+
+f) Tein koneiden välille virtuaaliverkon, jossa Kali koneen saa myös verkkoon kiinni, jos niin haluaa. Se onnistuu VirtualBoxissa jossa menin ensin File > Tools > Network Manager > Create.
+![8](https://github.com/user-attachments/assets/fe4c9556-e6cc-493b-8374-7164b7b197c2)
+
+Pingasin molemmissa koneissa www.google.com ja en saanut yhteyttä. Sitten kokeilin pingata Kali koneella Metaspoilable 2 konetta ja sain vastauksen takaisin. Käytin verkon asetuksiin Tuomaksen vinkkejä (Metaspoilable2 asennus).
+![10](https://github.com/user-attachments/assets/b47e3d43-73c1-4f7f-8609-7c1a02151ec9)
+![11](https://github.com/user-attachments/assets/2b365b2b-cf75-4689-8e1b-079b84c598f7)
+![12](https://github.com/user-attachments/assets/d9a246de-92c3-4432-ba8c-51a95b81747a)
 
 e) Ajoin komennon nmap -sn [metaspoilable ip] ja sain vastauksen terminaaliin, että kyseisen ip:n host on päällä ja tarkistin selaimenkautta että, metaspoilable webbipalvelin oli päällä.
+![13](https://github.com/user-attachments/assets/dfd350dc-e1f9-40d3-9f48-fd8a94e4a9ff)
 
-f) Metaspoilable rootshell portti 1524 on kiinnostava koska sillä voidaan mahdollisesti päästä metaspoilablen sisälle ja saada root oikeudet. Portti 3306 MySQL voi olla hakkerille kiinnostava portti koska kyseessä on tietokanta.
+
+f) Metaspoilable rootshell portti 1524 on kiinnostava koska sillä voidaan mahdollisesti päästä metaspoilablen sisälle ja saada root oikeudet. Mikä pisti silmään oli että state oli open joka antaa hakkerille suoran pääsyn shelliin.
+![15](https://github.com/user-attachments/assets/20a0d655-e261-4eb1-8fd3-e548502ccddf)
+
+Portti 3306 MySQL voi olla hakkerille kiinnostava portti koska kyseessä on tietokanta. Tietokanta voi pitää sisällään herkkää tietoa esimerkiksi henkilätunnuksia, salasanoja ja käyttäjiä.
+![14](https://github.com/user-attachments/assets/60a6c41b-90a8-442e-98f9-21a0f961ab80)
+
 
 ## Lähteet
 Kalin kotisivu https://www.kali.org/get-kali/#kali-live
