@@ -12,7 +12,7 @@ KKO:2003:36
 -Syytetty oli tehnyt porttiskannauksen OP tietojärjestelmään ilman erillistä lupaa.
 -Hovioikeis oli päättänyt että syytetty oli syyllistynyt tietomurron yritykseen.
 
-a) Latasin uusimman Kali linux live tikun iso-kuvan Kalin kotisivulta versio: kali-linux-2025. 1a-live-amd64.iso. Käytin asennuksessa 4096mb muistia, 3 prosessoria ja 60gb kovalevy muistia.![1](https://github.com/user-attachments/assets/c7c65562-e934-4198-ade7-d32546ec1f47 =250x250)
+a) Latasin uusimman Kali linux live tikun iso-kuvan Kalin kotisivulta versio: kali-linux-2025. 1a-live-amd64.iso. Käytin asennuksessa 4096mb muistia, 3 prosessoria ja 60gb kovalevy muistia.![1](https://github.com/user-attachments/assets/c7c65562-e934-4198-ade7-d32546ec1f47)
 
 
 b) Poistin kalin verkosta painamalla Ethernet Network kuvaketta oikeasta yläkulmasta ja valitsemalla disconnect. Tämän jälkeen avasin terminaalin ja kokeilin komentoa ping 8.8.8.8, josta tuli vastaus ping: connect: Network is unreachable.
